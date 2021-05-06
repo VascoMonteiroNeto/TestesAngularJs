@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso AngularJS</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="node_modules\angular\angular.min.js"></script>
+    <script src="node_modules\angular-route\angular-route.min.js"></script>
+    
+    
+    <script src="curso-app.js"></script>
+    <script src="curso-router.js"></script>
+    <script src="curso-service.js"></script>
+
+    <script src="cadastro/cadastro-controller.js"></script>
+    <script src="home/home-controller.js"></script>
+
+</head>
+
+<body ng-app="meuApp">
+
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#" ng-click="">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#!/Cadastro" ng-click="">Cadastro</a>
+            </li>
+      </ul>
+
+      <div ng-view></div>
+
+    </div>
+</body>
+</html>
